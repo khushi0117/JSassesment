@@ -14,7 +14,7 @@ const Nfts =[]
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
 function mintNFT (Id, Name ,Phone_no, Address) {
-    const Nft = {
+    const Nft ={
         "ID" :Id,
         "Name" : Name,
         "Phone_no": Phone_no,
@@ -27,24 +27,24 @@ function mintNFT (Id, Name ,Phone_no, Address) {
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-  for(let i=0; i<Nfts.length; i++) {
-      console.log("\nID:" +(i+1));
-      console.log("\nName:" +Nfts[i].Name);
-      console.log("\nPhone no:" +Nfts[i].Phone_no);
-      console.log("\nAddress:" + Nfts[i].Address);
+  for(let i=0; i< Nfts.length; i++) {
+      console.log("ID:" +(i+1));
+      console.log("Name:" +Nfts[i].Name);
+      console.log("Phone no:" +Nfts[i].Phone_no);
+      console.log("Address:" + Nfts[i].Address);
   }
 }
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-  console.log("\n" + Nfts.length);
+  console.log("NFT length : " + Nfts.length);
 }
 
 // call your functions below this line
-mintNFT("101","Anuradha","893204538", "Gujrat");
-mintNFT("102","vibha","568893433", "Up");
-mintNFT("103","Sanskar","89302845", "Pune");
-mintNFT("104","Aarti","334667589", "Patna");
+mintNFT("101","Anuradha","985769345", "Gujrat");
+mintNFT("102","Happy","675880432", "Chattisgarh");
+mintNFT("103","Santi","123789456", "Pune");
+mintNFT("104","Brijesh","00987652", "Patna");
 listNFTs();
 getTotalSupply();
 
