@@ -21,7 +21,7 @@ function mintNFT (Id, Name ,Phone_no, Address) {
         "Address": Address
     }
     Nfts.push(Nft);
-    console.log("mintNFT:" + Id);
+    console.log("MintNFT:" + Id);
 }
 
 // create a "loop" that will go through an "array" of NFT's
